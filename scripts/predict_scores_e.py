@@ -240,7 +240,7 @@ def main():
 
     df = pd.DataFrame(example_list)
     df
-    print('\nDATAFRAME IS: \n', df)
+    print('\nDATAFRAME: \n', df)
 
     #===========================================#
     #              Write output file            #

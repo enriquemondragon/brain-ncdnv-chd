@@ -10,5 +10,5 @@ Analyses performed for the study:
 
 ### Requirements 
 
-Deep learning models are implemented in `Python` and their corresponding usage and requirements can be seen in their repositories. WGNCA nad GO enrichment analysis were carried out in `R`. All scripts were executed on `Linux (Ubuntu 20.04.1)`.
+Deep learning models are implemented in `Python` and their corresponding usage and requirements can be seen in their repositories. WGCNA and GO enrichment analysis were carried out in `R`. All scripts were executed on `Linux (Ubuntu 20.04.1)`.
 
