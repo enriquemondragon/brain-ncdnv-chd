@@ -1,4 +1,4 @@
-# Brain ncDNV CHD
+# Brain and Genes study
 
 ### Overview
 
