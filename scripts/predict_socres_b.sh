@@ -11,7 +11,7 @@ help () {
          echo -e "Usage: predict_scores_b.sh [outdir] [.vcf]"
 }
 
-if [ $# -ne 6 ]
+if [ $# -ne 2 ]
 then
     help
     exit 1

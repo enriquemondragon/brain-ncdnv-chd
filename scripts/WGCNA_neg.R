@@ -2,10 +2,10 @@
 #                   Weighted Correlation Network Analysis:                     #
 #                               Negative scores                                #
 #==============================================================================#
-# Author: Mondragon-Estrada E. et al.
-# Last reviewed: April 2024
-# Copyright (c) Mondragon-Estrada E. et al., 2024
-#===============================================================================
+# Author: Mondragon-Estrada E. et al.                                          #
+# Last reviewed: April 2024                                                    #
+# Copyright (c) Mondragon-Estrada E. et al., 2024                              #
+#==============================================================================#
 
 getwd();
 workingDir = "/path/to/working/dir";

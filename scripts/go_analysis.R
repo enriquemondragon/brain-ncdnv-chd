@@ -1,10 +1,10 @@
 #==============================================================================#
 #                         Gene set enrichment analysis                         #
 #==============================================================================#
-# Author: Mondragon-Estrada E. et al.
-# Last reviewed: April 2024
-# Copyright (c) Mondragon-Estrada E. et al., 2024
-#===============================================================================
+# Author: Mondragon-Estrada E. et al.                                          #
+# Last reviewed: April 2024                                                    #
+# Copyright (c) Mondragon-Estrada E. et al., 2024                              #
+#==============================================================================#
 
 library(dplyr)
 library(clusterProfiler)
