@@ -20,5 +20,13 @@ Scripts were executed on `Linux (Ubuntu 20.04.1)`. Deep learning models are impl
 --------
 ### Preprint
 ```
-Mondragon-Estrada, Enrique and Newburger, Jane W. and DePalma, Steven and Brueckner, Martina and Cleveland, John and Chung, Wendy and Gelb, Bruce D. and Goldmuntz, Elizabeth and Hagler, Donald J. and Huang, Hao and McQuillen, Patrick S. and Miller, Thomas A. and Panigrahy, Ashok and Porter, George and Roberts, Amy E. and Rollins, Caitlin K. and Russell, Mark W. and Tristani-Firouzi, Martin and Grant, Ellen and Im, Kiho and Morton, Sarah U., Using Machine Learning to Predict Noncoding Variant Associations with Sulcal Patterns in Congenital Heart Disease. Available at SSRN: https://ssrn.com/abstract=4845174 or http://dx.doi.org/10.2139/ssrn.4845174 
+Mondragon-Estrada, Enrique and Newburger, Jane W. and DePalma, Steven and 
+Brueckner, Martina and Cleveland, John and Chung, Wendy and Gelb, Bruce D. and 
+Goldmuntz, Elizabeth and Hagler, Donald J. and Huang, Hao and McQuillen, Patrick S. and 
+Miller, Thomas A. and Panigrahy, Ashok and Porter, George and Roberts, Amy E. and 
+Rollins, Caitlin K. and Russell, Mark W. and Tristani-Firouzi, Martin and 
+Grant, Ellen and Im, Kiho and Morton, Sarah U., 
+Using Machine Learning to Predict Noncoding Variant Associations with Sulcal Patterns 
+in Congenital Heart Disease. 
+Available at SSRN: https://ssrn.com/abstract=4845174 or http://dx.doi.org/10.2139/ssrn.4845174 
 ```
