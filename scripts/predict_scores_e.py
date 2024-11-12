@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 '''
@@ -30,11 +29,36 @@ import joblib
 import re
 import h5py
 
+parser = argparse.ArgumentParser(description=' #============ Predict variant scores with Enformer ============#', usage='%(prog)s')
+parser.add_argument('-v', '--vcf_file', type=str, required=True, help='file with the genomic variants', dest='vcf_file')
+parser.add_argument('-f', '--fasta_file', type=str, required=True, help='hg sequence file', dest='fasta_file')
+parser.add_argument('-t', '--targets_file', type=str, required=True, help='targets file', dest='targets_file')
+parser.add_argument('-o', '--out_dir', type=str, required=True, help='Output directory', dest='out_dir')
+
+args = parser.parse_args()
+
+#os.environ["CUDA_VISIBLE_DEVICES"]="0"
+print(tf.config.list_physical_devices('GPU'))
+
 #===========================================#
-#      Enformer: Classes and functions      #
+#             Loading data and models       #
 #===========================================#
 
 SEQUENCE_LENGTH = 393216
+transform_path = 'gs://dm-enformer/models/enformer.finetuned.SAD.robustscaler-PCA500-robustscaler.transform.pkl'
+model_path = 'https://tfhub.dev/deepmind/enformer/1'
+fasta_file = args.fasta_file
+var_vcf = args.vcf_file
+
+# Cite: Kelley et al Cross-species regulatory sequence activity prediction. PLoS Comput. Biol. 16, e1008050 (2020).
+targets_txt = args.targets_file 
+df_targets = pd.read_csv(targets_txt, sep='\t')
+
+pyfaidx.Faidx(fasta_file)
+
+#===========================================#
+#      Enformer: Classes and functions      #
+#===========================================#
 
 class Enformer:
 
@@ -194,33 +218,11 @@ def variant_centered_sequences(vcf_file, sequence_length, gzipped=False,
 
 
 def main():
-    parser = argparse.ArgumentParser(description=' #============ Predict variant scores with Enformer ============#', usage='%(prog)s')
-    parser.add_argument('-v', '--vcf_file', type=str, required=True, help='file with the genomic variants', dest='vcf_file')
-    parser.add_argument('-f', '--fasta_file', type=str, required=True, help='hg sequence file', dest='fasta_file')
-    parser.add_argument('-t', '--targets_file', type=str, required=True, help='targets file', dest='targets_file')
-    parser.add_argument('-o', '--out_dir', type=str, required=True, help='Output directory', dest='out_dir')
     
-    args = parser.parse_args()
-    
-    #os.environ["CUDA_VISIBLE_DEVICES"]="0"
-    print(tf.config.list_physical_devices('GPU'))
-    
-    #===========================================#
-    #             Loading data and models       #
-    #===========================================#
-    
-    transform_path = 'gs://dm-enformer/models/enformer.finetuned.SAD.robustscaler-PCA500-robustscaler.transform.pkl'
-    model_path = 'https://tfhub.dev/deepmind/enformer/1'
-    fasta_file = args.fasta_file
-    var_vcf = args.vcf_file
-    # Cite: Kelley et al Cross-species regulatory sequence activity prediction. PLoS Comput. Biol. 16, e1008050 (2020).
-    targets_txt = args.targets_file 
-    df_targets = pd.read_csv(targets_txt, sep='\t')
-    
-    pyfaidx.Faidx(fasta_file)
     #===========================================#
     #       Score variants for 5313 targets     #
     #===========================================#
+    
     enformer_score_variants_all = EnformerScoreVariantsNormalized(model_path, transform_path)
 
     # All Scores
