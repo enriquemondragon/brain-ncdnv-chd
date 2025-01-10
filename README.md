@@ -7,7 +7,7 @@
 This repository contains the code used in the study: Mondragon-Estrada et al., Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact, iScience (2024), https://doi.org/10.1016/j.isci.2024.111707
 
 <p align="center">
-    <img width=100% height=100% src="https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/figures/graphical_abstract.png">
+    <img width=80% height=80% src="https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/figures/graphical_abstract.png">
 </p>
 
 The main analyses were:
@@ -32,7 +32,7 @@ Basenji2's predictions were obtained using the script [predict_scores_b.sh](http
 
 Enformer's predictions were obtained using the script [predict_scores_e.py](https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/scripts/predict_scores_e.py). Instructions for installing Basenji2 and creating a virtual environment are available in the original [Enformer GitHub repository](https://github.com/google-deepmind/deepmind-research/tree/master/enformer).
 
-For processing and statistical steps performed in Python3, we recommed creating a third virtual environment with this [requirements.txt](https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/scripts/requirements.txt).
+For processing and statistical steps performed in Python3, we recommed creating a third virtual environment with this [requirements.txt](https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/scripts/processing/requirements.txt).
 
 ```
     $ python3 -m venv venv
