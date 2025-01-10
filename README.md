@@ -36,6 +36,7 @@ For processing and statistical steps performed in Python3, we recommed creating 
 
 ```
     $ python3 -m venv venv
+    $ source venv/bin/activate
     $ pip install -r requirements.txt
 ```
 For analyses done in R, the following packages are required:
