@@ -4,7 +4,7 @@
 
 ### Overview
 
-This repository contains the code used in the study: Mondragon-Estrada et al., Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact, iScience (2024), https://doi.org/10.1016/j.isci.2024.111707
+This repository contains the code used in the study: Mondragon-Estrada et al., Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact, iScience, https://doi.org/10.1016/j.isci.2024.111707.
 
 <p align="center">
     <img width=80% height=80% src="https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/figures/graphical_abstract.png">
@@ -48,3 +48,21 @@ For analyses done in R, the following packages are required:
 *   org.Hs.eg.db
 *   ggplot2
 *   RColorBrewer
+
+--------
+### Citation
+
+```
+@article{MONDRAGONESTRADA2025111707,
+    author = {Enrique Mondragon-Estrada and Jane W. Newburger and Steven R. DePalma and Martina Brueckner and John Cleveland and Wendy K. Chung and Bruce D. Gelb and Elizabeth Goldmuntz and Donald J. Hagler and Hao Huang and Patrick McQuillen and Thomas A. Miller and Ashok Panigrahy and George A. Porter and Amy E. Roberts and Caitlin K. Rollins and Mark W. Russell and Martin Tristani-Firouzi and P. Ellen Grant and Kiho Im and Sarah U. Morton},
+    title = {Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact},
+    journal = {iScience},
+    volume = {28},
+    number = {2},
+    pages = {111707},
+    year = {2025},
+    issn = {2589-0042},
+    doi = {https://doi.org/10.1016/j.isci.2024.111707},
+    url = {https://www.sciencedirect.com/science/article/pii/S2589004224029341}
+}
+```
