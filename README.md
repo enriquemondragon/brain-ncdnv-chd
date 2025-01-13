@@ -4,7 +4,7 @@
 
 ### Overview
 
-This repository contains the code used in the study: Mondragon-Estrada et al., Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact, iScience, https://doi.org/10.1016/j.isci.2024.111707.
+This repository contains the code used in the study: Mondragon-Estrada et al., [Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact](https://www.cell.com/iscience/fulltext/S2589-0042(24)02934-1), iScience (2025), https://doi.org/10.1016/j.isci.2024.111707.
 
 <p align="center">
     <img width=80% height=80% src="https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/figures/graphical_abstract.png">
