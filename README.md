@@ -41,13 +41,44 @@ For processing and statistical steps performed in Python3, we recommed creating 
 ```
 For analyses done in R, the following packages are required:
 
-*   WGCNA
-*   dplyr
-*   clusterProfiler
-*   biomaRt
-*   org.Hs.eg.db
-*   ggplot2
-*   RColorBrewer
+*   Bioconductor packages:
+    *   WGCNA
+    *   clusterProfiler
+    *   biomaRt
+    *   org.Hs.eg.db
+    *   GenomicRanges
+    *   ChIPpeakAnno
+    *   TxDb.Hsapiens.UCSC.hg38.knownGene
+
+*   CRAN packages:
+    *   ggplot2
+    *   dplyr
+    *   RColorBrewer
+    *   ppcor
+
+They all can be installed using the following commands in R:
+
+```
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("WGCNA")
+BiocManager::install("clusterProfiler")
+BiocManager::install("biomaRt")
+BiocManager::install("org.Hs.eg.db")
+BiocManager::install("GenomicRanges")
+BiocManager::install("ChIPpeakAnno")
+BiocManager::install("TxDb.Hsapiens.UCSC.hg38.knownGene")
+
+# For installing ggplot and dplyr, it is easier to install the whole tidyverse:
+install.packages("tidyverse") 
+# Anternatively, each package can be installed individually with the following commands:
+install.packages("ggplot2")
+install.packages("dplyr")
+
+install.packages("RColorBrewer")
+install.packages("ppcor")
+```
 
 --------
 ### Citation
