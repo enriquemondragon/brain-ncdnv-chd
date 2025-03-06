@@ -1,6 +1,7 @@
 # Noncoding variants and sulcal patterns in congenital heart disease: Machine learning to predict functional impact
 ![MIT License](https://badgen.net/static/license/MIT/blue)
-[![doi](https://badgen.net/badge/doi/10.1016%2Fj.isci.2024.111707)](https://doi.org/10.1016/j.isci.2024.111707)
+[![DOI](https://badgen.net/badge/doi/10.1016%2Fj.isci.2024.111707)](https://doi.org/10.1016/j.isci.2024.111707)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14934079.svg)](https://doi.org/10.5281/zenodo.14934079)
 
 ### Overview
 
@@ -34,7 +35,7 @@ Enformer's predictions were obtained using the script [predict_scores_e.py](http
 
 For processing and statistical steps performed in Python3, we recommed creating a third virtual environment with this [requirements.txt](https://github.com/MortonLabBCH/brain-ncdnv-chd/blob/main/scripts/processing/requirements.txt).
 
-```
+```shell
     $ python3 -m venv venv
     $ source venv/bin/activate
     $ pip install -r requirements.txt
@@ -58,7 +59,7 @@ For analyses done in R, the following packages are required:
 
 They all can be installed using the following commands in R:
 
-```
+```R
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
@@ -72,7 +73,7 @@ BiocManager::install("TxDb.Hsapiens.UCSC.hg38.knownGene")
 
 # For installing ggplot and dplyr, it is easier to install the whole tidyverse:
 install.packages("tidyverse") 
-# Anternatively, each package can be installed individually with the following commands:
+# Alternatively, each package can be installed individually with the following commands:
 install.packages("ggplot2")
 install.packages("dplyr")
 
